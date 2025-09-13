@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AsyncDefer Attributes</title>
+  </head>
+  <body>
+    <!-- external js me work karega inline me nahi karega  -->
+    <!-- executed as soon as it ready -->
+    <!-- <script src="Async.js" async></script>  -->
+
+    <!-- executed only after the html parsing is completed -->
+    <script src="AsyncDefer.js" defer></script>
+
+
+    <!-- heading color changed into red if script is executed only after html parsing -->
+    <h1 id="heading">this is a heading</h1>
+  </body>
+</html>
