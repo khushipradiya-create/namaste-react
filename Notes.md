@@ -1,19 +1,8 @@
 #Assigment 1 
 #inception
 
+eval "$(ssh-agent -s)"
 
-1. what is Emmet ?
-ans : 
-   Emmet is a built-in tool in VS Code (and other editors) that lets you write shortcuts to quickly generate pieces of code in HTML and CSS.
-
-   Ex : html:5 (it generates a basic skeleton of html code)
-   EX : ul>li\*3
-
-
-
-2. Difference between library and framework ?
-ans : 
-   Library : A collection of ready-made functions/code that you can call and use whenever you want. You are in control of how and when to use it.
    Example: React, jQuery
 
    Framework : A complete structure or skeleton to build applications.
