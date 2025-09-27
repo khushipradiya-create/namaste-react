@@ -1,79 +1,22 @@
-// creating heading using js----------------------
+/*
+commands
 
-// const root = document.getElementById('root')
-// const heading = document.createElement('h1')
-// heading.innerHTML = "Heading using JS"
-// root.appendChild(heading)
+npm init : package.json
+npm install -D parcel :  package.lock.json
+for recreating the node module :  npm install
+npx parcel index.html : for exeuting npm and starting point index.html
 
-
-
-// Create heading using react------------------------------------
-// React.createElement returns a js object
-// root.render take this object and convert it into html element
+*/
 
 
-const heading = React.createElement('h1', {
-    //this all are the props (attributes +  childern)
-    id: "mainHeading",
-    xyc: "kuchBhi"
-}, "Our First React Code")
+import react from 'react';
+import ReactDom from 'react-dom/client'
 
-// // console.log(heading);
+const heading = react.createElement('h1', { id: 'heading1' }, " ");
+const root = ReactDom.createRoot(document.getElementById('root'))
+// root.render(heading);
 
-// // const root = ReactDOM.createRoot(document.getElementById('root'))
-// // root.render(heading)
-
-
-
-
-
-// // Nested React element
-
-// {/* <div id="parent">
-//     <div id="child1">
-//         <h1>Heading 1</h1>
-//         <h2>Heading 2</h2>
-//     </div>
-//     <div id="child2">
-//         <h1>Heading 1</h1>
-//         <h2>Heading 2</h2>
-//     </div>
-// </div> */}
-
-
-
-const parent = React.createElement('div', {
-    id: "parent"
-},
-    [
-        React.createElement('div', { id: "child1" },
-            [
-                React.createElement('h1', {}, "Heading 1"), // we using Array of Childern if we want to insert multiple childern
-                React.createElement('h2', {}, "Heading 1")
-            ]
-
-        ),
-        React.createElement('div', { id: "child2" },
-            [
-                React.createElement('h1', {}, "Heading 1"), // we using Array of Childern if we want to insert multiple childern
-                React.createElement('h2', {}, "Heading 1")
-            ]
-
-        )
-    ]
-)
-
-
-
-
-const poster = React.createElement('div', { id: "poster" },
-    React.createElement('p', { }, " this is something i want to try"),
-    React.createElement('h1', { }, " A tree")
-)
-
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent)
-root.render(poster) //root.render replace the existing element with new element
+const box = react.createElement('div', { id: 'box' },
+        react.createElement('div', { id: "box2" },
+        react.createElement("div", { id: 'box3' })))
+root.render(box)

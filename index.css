@@ -1,4 +1,37 @@
-#mainHeading {
-  background-color: blue;
-  color :white;
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+#box {
+  height: 300px;
+  width: 300px;
+  border-radius: 1rem;
+  background-color: bisque;
+  border: 2px solid black;
+}
+#box2 {
+  height: 50%;
+  width: 50%;
+  border-radius: 1rem;
+  background-color: rgb(207, 55, 174);
+  border: 2px solid black;
+}
+#box3 {
+  height: 50%;
+  width: 50%;
+  border-radius: 1rem;
+  background-color: rgb(227, 126, 37);
+  border: 2px solid black;
+}
+#box, #box2, #box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }

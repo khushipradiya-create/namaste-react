@@ -1,0 +1,23 @@
+{
+  "name": "episode2_igniting_app",
+  "version": "1.0.0",
+  "description": "namaste react study ",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "hey",
+    "hello"
+  ],
+  "author": "khushi pardiya",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "episode2_igniting_app": "file:",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserlists": {}
+}
